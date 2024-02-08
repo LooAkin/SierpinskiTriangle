@@ -9,6 +9,8 @@ public void draw()
 {
    background(100, 50, 200);
    if(draw == true){
+   //  int r = Math.random()*5 + 20;
+    // fill( 
     sierpinski(100, 700, 600);
   }
 }
