@@ -9,22 +9,23 @@ public void draw()
 {
    background(100, 50, 200);
    if(draw == true){
-   //  int r = Math.random()*5 + 20;
-    // fill( 
+   int r = (int) Math.random()*5 + 20;
+   int g = (int) Math.random()*55 + 200;
+   int b = (int) Math.random()*20 + 100;
+    fill(r, g, b);
+    stroke(r*.9, g*.9, b*.9);
     sierpinski(100, 700, 600);
   }
 }
 
 public void sierpinski(int x, int y, int len) 
 {
-  fill(40, 200, 100);
-  stroke(36, 180, 90);
   if(len <= 10)
     triangle(x, y, x+len/2, y-len, x+len, y);
   else {
     int half = len/2;
     sierpinski(x, y, half);
     sierpinski(x+half, y, half); 
-    sierpinski(x+half/2, y-half, half);
+    //sierpinski(x+(half/2), y-half, half);
   }
 }
