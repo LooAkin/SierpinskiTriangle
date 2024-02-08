@@ -2,12 +2,15 @@ public void setup()
 {
   size(800,800);
   strokeWeight(5);
-  
+  Boolean draw = true;
+  Boolean triangle = true;
 }
 public void draw()
 {
    background(100, 50, 200);
-   sierpinski(100, 700, 600);
+   if(draw == true){
+    sierpinski(100, 700, 600);
+  }
 }
 
 public void sierpinski(int x, int y, int len) 
