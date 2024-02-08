@@ -25,6 +25,6 @@ public void sierpinski(int x, int y, int len)
     int half = len/2;
     sierpinski(x, y, half);
     sierpinski(x+half, y, half); 
-    sierpinski(x+half/2, y-half);
+    sierpinski(x+half/2, y-half, half);
   }
 }
