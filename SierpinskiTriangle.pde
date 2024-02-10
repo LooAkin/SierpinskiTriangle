@@ -14,7 +14,8 @@ public void draw()
    int b = (int) Math.random()*20 + 100;
     fill(r, g, b);
     stroke(r*.9, g*.9, b*.9);
-    sierpinski(100, 700, 600);
+    ellipse(400,400, 300, 300);
+    //sierpinski(100, 700, 600);
   }
 }
 
