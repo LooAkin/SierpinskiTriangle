@@ -18,6 +18,13 @@ public void draw()
   }
 }
 
+public void mouseClicked(){
+  if(draw == true)
+    draw = false;
+  else
+    draw = true;
+}
+
 public void sierpinski(int x, int y, int len) 
 {
   if(len <= 20)
