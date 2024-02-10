@@ -13,14 +13,6 @@ public void draw()
     sierpinski(100, 700, 600);
 }
 
-public void keyPressed(){
-  int r = (int) Math.random()*5 + 20;
-  int g = (int) Math.random()*55 + 200;
-  int b = (int) Math.random()*20 + 100;
-  fill(r, g, b);
-  stroke((int)r*.9, (int) g*.9, (int) b*.9);
-}
-
 public void mouseClicked(){
   if(draw == true)
     draw = false;
