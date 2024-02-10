@@ -9,10 +9,8 @@ public void setup()
 public void draw()
 {
    background(100, 50, 200);
-   if(draw == true){
-    ellipse(400,400, 300, 300);
-    //sierpinski(100, 700, 600);
-  }
+   if(draw == true)
+    sierpinski(100, 700, 600);
 }
 
 public void keyPressed(){
