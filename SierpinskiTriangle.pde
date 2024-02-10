@@ -1,7 +1,7 @@
 public void setup()
 {
   size(800,800);
-  strokeWeight(5);
+  strokeWeight(3);
   Boolean draw = true;
   fill(50, 200, 100);
   stroke(45, 180, 90);
